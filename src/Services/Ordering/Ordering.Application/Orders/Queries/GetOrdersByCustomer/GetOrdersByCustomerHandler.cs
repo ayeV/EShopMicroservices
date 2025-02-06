@@ -7,7 +7,7 @@ namespace Ordering.Application.Orders.Queries.GetOrdersByCustomer
         {
             var orders = await dbContext.Orders
                 .Include(o=>o.OrderItems)
-                .Where(o=> o.CustomerId.Value == query.CustomerId)
+                .Where(o => o.CustomerId == CustomerId.Of(query.CustomerId))
                 .AsNoTracking()
                 .ToListAsync(cancellationToken);
 

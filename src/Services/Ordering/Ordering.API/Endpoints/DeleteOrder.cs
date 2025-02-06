@@ -5,20 +5,17 @@ using Ordering.Application.Orders.Commands.DeleteOrder;
 
 namespace Ordering.API.Endpoints
 {
-
-    public record DeleteOrderRequest(Guid Id);
-
     public record DeleteOrderResponse(bool Succeeded);
     public class DeleteOrder : ICarterModule
     {
         public void AddRoutes(IEndpointRouteBuilder app)
         {
-            app.MapDelete("/orders/{Id}", async (DeleteOrderRequest request, ISender sender) =>
+            app.MapDelete("/orders/{id}", async (Guid id, ISender sender) =>
             {
-                var command = request.Adapt<DeleteOrderCommand>();
+                var command = new DeleteOrderCommand(id);
                 var result = await sender.Send(command);
                 var response = result.Adapt<DeleteOrderResponse>();
-                return response.Succeeded ? Results.Ok(response) : Results.NotFound(response);
+                return Results.Ok(response);
             })
                 .WithName("DeleOrder")
                 .Produces<DeleteOrderResponse>(StatusCodes.Status200OK)

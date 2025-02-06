@@ -6,7 +6,8 @@ namespace Ordering.Application.Orders.Commands.DeleteOrder
     {
         public async Task<DeleteOrderResult> Handle(DeleteOrderCommand request, CancellationToken cancellationToken)
         {
-            var orderId = await dbContext.Orders.FindAsync(OrderId.Of(request.OrderId));
+            var id = OrderId.Of(request.OrderId);
+            var orderId = await dbContext.Orders.FindAsync([id],cancellationToken);
             if (orderId is null)
             {
                 throw new OrderNotFoundException(request.OrderId);

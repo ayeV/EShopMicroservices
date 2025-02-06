@@ -33,6 +33,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Application", "Ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infraestructure", "Services\Ordering\Ordering.Infraestructure\Ordering.Infraestructure.csproj", "{DF99EA13-FD71-4BD7-A4F1-D7F34CAC5054}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks.Messaging", "BuildingBlocks\BuildingBlocks.Messaging\BuildingBlocks.Messaging.csproj", "{0A31B63D-E4CD-4776-918E-821321EB76A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{03D93C6A-528E-40B5-9E51-2FCDFA4A3E96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YarpApiGateway", "ApiGateways\YarpApiGateway\YarpApiGateway.csproj", "{4A4E64EB-ADAC-4156-985D-C8962F956189}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +81,14 @@ Global
 		{DF99EA13-FD71-4BD7-A4F1-D7F34CAC5054}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF99EA13-FD71-4BD7-A4F1-D7F34CAC5054}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF99EA13-FD71-4BD7-A4F1-D7F34CAC5054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A31B63D-E4CD-4776-918E-821321EB76A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A31B63D-E4CD-4776-918E-821321EB76A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A31B63D-E4CD-4776-918E-821321EB76A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A31B63D-E4CD-4776-918E-821321EB76A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A4E64EB-ADAC-4156-985D-C8962F956189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4E64EB-ADAC-4156-985D-C8962F956189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4E64EB-ADAC-4156-985D-C8962F956189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4E64EB-ADAC-4156-985D-C8962F956189}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,5 +106,7 @@ Global
 		{AB6A6B79-930F-486C-A203-46EDD9A94933} = {610F5EE4-DD1B-4CDB-A7A0-0EEB727D1454}
 		{E3B8BFE3-D83B-4F66-8E54-465F22730313} = {610F5EE4-DD1B-4CDB-A7A0-0EEB727D1454}
 		{DF99EA13-FD71-4BD7-A4F1-D7F34CAC5054} = {610F5EE4-DD1B-4CDB-A7A0-0EEB727D1454}
+		{0A31B63D-E4CD-4776-918E-821321EB76A3} = {38B30FC4-FC36-4761-94F9-A7EF7AAC9331}
+		{4A4E64EB-ADAC-4156-985D-C8962F956189} = {03D93C6A-528E-40B5-9E51-2FCDFA4A3E96}
 	EndGlobalSection
 EndGlobal

@@ -5,3 +5,6 @@ global using Mapster;
 global using MediatR;
 global using FluentValidation;
 global using Basket.API.Data;
+global using Basket.API.Dtos;
+global using BuildingBlocks.Messaging.Events;
+global using MassTransit;
