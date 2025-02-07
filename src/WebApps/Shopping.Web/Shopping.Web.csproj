@@ -4,15 +4,13 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>d455b914-2dae-46ab-b196-12d3b5f5175f</UserSecretsId>
+    <UserSecretsId>ff4774b8-829e-404b-b83e-2ed535d51769</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
-    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
-    <PackageReference Include="Yarp.ReverseProxy" Version="2.2.0" />
   </ItemGroup>
 
 </Project>
